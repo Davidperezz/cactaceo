@@ -1,2 +1,2 @@
-# cactaceo
-Repo para servicios web
+# AppCitas
+Curso de Servicios Web para ICI de noveno semestre.
