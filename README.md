@@ -1,2 +1,2 @@
-# AppCitas de David De Jesús Pérez Díaz ID: 252129 UAA
-Proyecto de servicios web
+# AppCitas
+Curso de Servicios Web para ICI de noveno semestre.
