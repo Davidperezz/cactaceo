@@ -72,7 +72,7 @@ namespace AppCitas.UnitTests.Tests
             Assert.Equal(statusCode, httpResponse.StatusCode.ToString());
         }
         [Theory]
-        [InlineData("OK", "rosa", "Pa$$w0rd", "lisa", "Hola")]
+        [InlineData("OK", "todd", "Pa$$w0rd", "lisa", "Hola")]
         public async Task CreateMessage_OK(string statusCode, string username, string password, string recipientUsername, string content)
         {
             // Arrange
@@ -152,7 +152,7 @@ namespace AppCitas.UnitTests.Tests
 
 
         [Theory]
-        [InlineData("OK", "berry", "Pa$$w0rd", "todd", "Hola")]
+        [InlineData("OK", "todd", "Pa$$w0rd", "lisa", "Hola")]
         public async Task DeleteMessage_OK(string statusCode, string username, string password, string recipientUsername, string content)
         {
             // Arrange
@@ -188,7 +188,7 @@ namespace AppCitas.UnitTests.Tests
         }
 
         [Theory]
-        [InlineData("Unauthorized", "todd", "Pa$$w0rd", "lisa", "Hola", "caroline")]
+        [InlineData("Unauthorized", "wagner", "Pa$$w0rd", "lisa", "Hola", "caroline")]
         public async Task DeleteMessage_Unauthorized(string statusCode, string username, string password, string recipientUsername, string content, string unauth)
         {
             // Arrange

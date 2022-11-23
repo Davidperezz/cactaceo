@@ -29,7 +29,7 @@ namespace AppCitas.UnitTests.Tests
         }
 
         [Theory]
-        [InlineData("OK", "louise", "Pa$$w0rd")]
+        [InlineData("OK", "lisa", "Pa$$w0rd")]
         public async Task GetUsersNoPagination_OK(string statusCode, string username, string password)
         {
             // Arrange
@@ -111,7 +111,7 @@ namespace AppCitas.UnitTests.Tests
         }
 
         [Theory]
-        [InlineData("Created", "esmeralda", "Pa$$w0rd", "C:\\Users\\perez\\Downloads\\proyecto final\\AppCitas-develop (4)\\AppCitas-develop\\AppCitas.UnitTests\\a.jpg")]
+        [InlineData("Created", "esmeralda", "Pa$$w0rd", "../../../a.jpg")]
         public async Task AddPhoto_Created(string statusCode, string username, string password, string file)
         {
             // Arrange
@@ -145,7 +145,7 @@ namespace AppCitas.UnitTests.Tests
         }
 
         [Theory]
-        [InlineData("NoContent", "tanner", "Pa$$w0rd", "C:\\Users\\perez\\Downloads\\proyecto final\\AppCitas-develop (4)\\AppCitas-develop\\AppCitas.UnitTests\\b.jpg")]
+        [InlineData("NoContent", "tanner", "Pa$$w0rd", "../../../b.jpg")]
         public async Task SetMainPhoto_OK(string statusCode, string username, string password, string file)
         {
             // Arrange
@@ -188,7 +188,7 @@ namespace AppCitas.UnitTests.Tests
         }
 
         [Theory]
-        [InlineData("OK", "todd", "Pa$$w0rd", "C:\\Users\\perez\\Downloads\\proyecto final\\AppCitas-develop (4)\\AppCitas-develop\\AppCitas.UnitTests\\c.jpg")]
+        [InlineData("OK", "lisa", "Pa$$w0rd", "../../../c.jpg")]
         public async Task DeletePhoto_OK(string statusCode, string username, string password, string file)
         {
             // Arrange

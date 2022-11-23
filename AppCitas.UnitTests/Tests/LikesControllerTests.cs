@@ -45,7 +45,7 @@ namespace AppCitas.UnitTests.Tests
 
 
         [Theory]
-        [InlineData("BadRequest", "louise", "Pa$$w0rd", "louise")]
+        [InlineData("BadRequest", "lisa", "Pa$$w0rd", "lisa")]
         public async Task AddLike_BadRequest(string statusCode, string username, string password, string userLiked)
         {
             // Arrange
@@ -64,7 +64,7 @@ namespace AppCitas.UnitTests.Tests
         }
 
         [Theory]
-        [InlineData("OK", "todd", "Pa$$w0rd", "lisa")]
+        [InlineData("OK", "tanner", "Pa$$w0rd", "esmeralda")]
         public async Task AddLike_OK(string statusCode, string username, string password, string userLiked)
         {
             // Arrange
