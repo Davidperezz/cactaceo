@@ -1,2 +1,2 @@
 # AppCitas
-Proyecto SW ICI 2022
+Proyecto App citas ICI 2022
